@@ -350,10 +350,20 @@ p a:hover {
     max-width: 350px;
 }
 
-.common__btn button.btn__certified {
+.common__btn span {
+    border: 1px solid #777;
+    border-radius: 5px;
+    color: #7e7e7e;
+    padding: 0.1em 0.6em;
     font-size: .875rem;
-    padding: .1rem .625rem;
+}
+
+.common__btn span.btn__certified {
+    font-size: .875rem;
+    padding: .3rem .725rem;
     background-color: var(--sub--btn);
+    color: #Fff;
+    border-radius: 5px;
 }
 
 .security__summery .common__title h1 {

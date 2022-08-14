@@ -198,4 +198,25 @@ $(document).ready(function() {
         }
     })
 
+    // service type
+    $('.common__btn span').on('click', function(e) {
+        $('.common__btn span').removeClass('btn__certified');
+        $('.common__btn span').html('Select');
+        $(this).addClass('btn__certified');
+        $(this).html('Selected');
+        let serviceType = $(this).data("value")
+        $('.pay__dets p').html(serviceType)
+        if (serviceType == 'Certified Translation') {
+            $('#pageCount').show()
+            $('#wordCount').hide()
+        } else {
+            $('#pageCount').hide()
+            $('#wordCount').show()
+        }
+
+
+    })
+
+
+
 });

@@ -121,9 +121,9 @@
                                                                     <p>Word-for-word human translation of documents with certification for official use.</p>
                                                                 </div>
                                                                 <div class="common__btn">
-                                                                    <button type="submit" class="btn__certified text-end">
-                                    Selected
-                                </button>
+                                                                    <span type="submit" data-value="Certified Translation" class="btn__certified text-end">
+                                                                        Selected
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                             <div class="certified__type mb-5">
@@ -132,9 +132,9 @@
                                                                     <p>Human translation of documents and text-based content for business or personal use.</p>
                                                                 </div>
                                                                 <div class="common__btn">
-                                                                    <button type="submit" class="btn__certified text-end">
-                                    Selected
-                                </button>
+                                                                    <span type="submit" data-value="Standard Translation" class=" text-end">
+                                                                        Select
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                             <div class="common__title">
@@ -190,20 +190,23 @@
                                 </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="common__title">
+                                                            <div class="common__title mt-5">
                                                                 <h1>How many pages do you need translated?</h1>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <div class="page__count">
+                                                                    <div class="page__count" id="pageCount">
                                                                         <input type="number" placeholder="Page Count*">
+                                                                    </div>
+                                                                    <div class="page__count" id="wordCount" style="display: none">
+                                                                        <input type="number" placeholder="Word Count*">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-8">
                                                                     <p>A page is 250 words or fewer including numbers. Unsure of your page count? <a href="#">Request a quote.</a></p>
                                                                 </div>
                                                             </div>
-                                                            <div class="common__title">
+                                                            <div class="common__title mt-5">
                                                                 <h1>Upload the files you need translated</h1>
                                                             </div>
                                                             <div class="row">
@@ -377,6 +380,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
 
 
 </body>
